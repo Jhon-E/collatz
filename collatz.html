@@ -14,15 +14,23 @@
 </head>
 
 <body>
-<h1>Conjetura de Collatz</h1>
-<div class="container">
+    <div class="inicio">
+        <div class="card">
+            <h1>Conjetura de Collatz</h1>
+            <span>3x+1</span>
+        </div>
+        
+    </div>
+
+<section class="simulador">
     <div class="input">
         <label for="num">Escribe un número</label>
         <input id = "num" type="text" placeholder="Escribe aquí">
         <button type="submit" id="submit">Listo</button>
     </div>
-    <div id="line_chart" style="width: 900px; height: 500px"></div>
-</div>
+    <div class="result"></div>
+    <div id="line_chart" style="height: 500px"></div>
+</section>
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="indexColl.js"></script>

@@ -12,17 +12,60 @@ body {
     color: #F0A500;
 }
 
-.container {
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F0A500;
+    width: 100%;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 8px 8px 16px rgba(185, 127, 0, 0.8),
+    -8px -8px 16px rgba(253, 188, 68, 0.8);
+}
+
+h1 {
+    font-size: 40px;
+    font-style: italic;
+    text-shadow: 1px 1px rgba(253, 188, 68, 0.8),-1px -1px rgba(185, 127, 0, 0.8);
+    position: relative;
+    color:#bd8100;
+}
+
+.card > span {
+    font-size: 30px;
+    font-style: italic;
+    text-shadow: 1px 1px rgba(253, 188, 68, 0.8),-1px -1px rgba(185, 127, 0, 0.8);
+    position: relative;
+    color:#bd8100;
+}
+
+.simulador {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    padding: 0px 20px;
+    margin-top: 60px;
 }
 
 .input {
     display: flex;
     flex-direction: column;
     font-size: 30px;
+}
+
+#line_chart {
+    width: 100%;
 }
 
 #num {
@@ -42,6 +85,7 @@ body {
 #submit {
     background: #334756;
     border:none;
+    margin-bottom:15px;
     color:#F0A500;
     padding: 10px;
     border-radius: 25px;
@@ -53,4 +97,71 @@ body {
 #submit:hover {
     background: #F0A500;
     color: #334756;
+}
+
+@media (max-width: 450px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 100px;
+        border-radius: 12px;
+        box-shadow: 8px 8px 16px rgba(185, 127, 0, 0.8),
+        -8px -8px 16px rgba(253, 188, 68, 0.8);
+    }
+
+    h1 {
+        font-size: 25px;
+        font-style: italic;
+        text-shadow: 1px 1px rgba(253, 188, 68, 0.8),-1px -1px rgba(185, 127, 0, 0.8);
+        position: relative;
+        color:#bd8100;
+    }
+
+    .card > span {
+        font-size: 15px;
+        font-style: italic;
+        text-shadow: 1px 1px rgba(253, 188, 68, 0.8),-1px -1px rgba(185, 127, 0, 0.8);
+        position: relative;
+        color:#bd8100;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .msg > h2 > b {
+        font-size: 14px;
+    }
+
+    #num {
+        background: none;
+        padding: 5px 0px;
+        margin: 10px 0px;
+        border:none;
+        border-bottom: 2px solid #F0A500;
+        color: #F0A500;
+        font-size: 12px;
+    }
+
+    #submit {
+        background: #334756;
+        border:none;
+        margin-bottom:15px;
+        color:#F0A500;
+        padding: 10px;
+        border-radius: 25px;
+        font-size:12px;
+        cursor: pointer;
+        transition: linear 0.1s;
+    }
+
+    #line_chart {
+        width: 250px;
+    }
+    
 }
