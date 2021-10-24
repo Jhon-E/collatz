@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prueba un simulador que realiza la conjetura de collatz y podras analizarlo en una grafica interactiva"/>
+    <meta name="keywords" content="Conjetura, conjetura, Conjeture, conjeture, Collatz, collatz, Conjetura Collatz, Conjeture collatz"/>
+    <meta name="robots" content="follow"/>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Conjetura de Collatz</title>
+
+</head>
+
+<body>
+    <div class="inicio">
+        <div class="card">
+            <h1>Conjetura de Collatz</h1>
+            <span>3x+1</span>
+        </div>
+        
+    </div>
+
+<section class="simulador">
+    <div class="input">
+        <label for="num">Escribe un número</label>
+        <input id = "num" type="text" placeholder="Escribe aquí">
+        <button type="submit" id="submit">Listo</button>
+    </div>
+    <div class="result"></div>
+    <div id="line_chart" style="height: 500px"></div>
+</section>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="indexColl.js"></script>
+</body>
+</html>
